@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dapp</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="stylesheet" href="css/dapp.css">
+</head>
+<body>
+    
+    <div class="header clearfix">
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark mb-4 bg-dark">
+            <a class="navbar-brand" href="#">Burn token Sample</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <form id="create-wallet-form">
+            <div class="row">
+                <div class="col form-group">
+                    <label>Current account: </label>
+                    <span id="currentAccount">0x</span>
+                </div>
+                <!-- 
+                    <label for="ethereumAddress">Receiver Address</label>
+                    <input id="ethereumAddress" type="text" class="form-control" placeholder="Reciever eth address">
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col form-group">
+                    <label>Number of Token</label>
+                    <input type="number" class="form-control" id="amount" name="amount" placeholder="Amount to burn">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" id="burnToken">Burn token</button>
+        </form>
+    </div>
+
+    <script src="js/lib/jquery-3.2.1.min.js"></script>
+    <script src="js/lib/popper-1.12.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+    <script src="js/lib/moment-2.19.2.min.js"></script>
+    <script src="js/lib/moment-timezone-0.5.14.min.js "></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="js/lib/bignumber.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/truffle-contract@4.0.22/dist/truffle-contract.min.js"></script>
+    <script src="js/metamask-enable.js"></script>
+    <script src="js/dapp.js"></script>
+</body>
+</html>
